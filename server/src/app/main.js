@@ -14,7 +14,7 @@ async function loadModule(tagName, cName, scriptLoc, fileName) {
 
 window.onload = function() {
     // This can be done in this way slightly 'headless', or in HTML itself.
-    // Could add attribute(s) with events to subscribe to
+    // Could add attribute(s)/events to subscribe to
     loadModule('bgg-list', 'BggList', '.', 'listLib.js');
     loadModule('bgg-cart', 'BggCart', '.', 'cartLib.js');
 }

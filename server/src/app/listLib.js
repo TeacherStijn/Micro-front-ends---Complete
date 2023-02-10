@@ -46,6 +46,7 @@ export default class BggList extends HTMLElement {
                        item=>item.name==el.childNodes[3].textContent
                    );
 
+                   // Could add error check if in meanwhile element in Array doesnt exist anymore
                    const custEv = new CustomEvent('list:like', { bubbles: true, detail: found });
                    this.dispatchEvent(custEv);
                });

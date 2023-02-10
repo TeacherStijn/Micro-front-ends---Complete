@@ -17,6 +17,7 @@ export default class BggCart extends HTMLElement {
     #input;
 
     connectedCallback() {
+        // here could use dynamic eventname
         window.addEventListener('list:like', (ev) => {
             this.#input=ev.detail;
             this.innerHTML = `<h2>Chosen game: ${this.#input.name}</h2>

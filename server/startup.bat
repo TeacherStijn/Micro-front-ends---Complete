@@ -1,1 +1,2 @@
-npm start
+call npm install
+call npm start
